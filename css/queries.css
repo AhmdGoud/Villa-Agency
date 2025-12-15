@@ -1,0 +1,101 @@
+/* Global Rules*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color: #312450; /* colors: #222, #eee, #eaeaea #1743e3 #312450*/
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "poppins", sans-serif; /* fonts: Source Sans Pro, lato san serif */
+}
+.container{
+    width: 90%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Media Query*/
+@media (max-width:1100px){
+    .features .container{
+        flex-wrap: wrap;
+    }
+    .feature-image{
+        width: 100%;
+    }
+    .best-deal-info{
+        flex-wrap: wrap;
+    }
+    .info-card,
+    .info-image,
+    .extra-info{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .info-card .info{
+        width: 100%;
+    }
+    .map-contact .container{
+        flex-wrap: wrap;
+    }
+    .contact-info,
+    .map{
+        width: 100%;
+    }
+}
+
+@media (max-width:787px){
+    .contact{
+        flex-direction: column;
+    }
+    .links .menu{
+        display: block;
+    }
+    header ul{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        background-color: #22222286;
+    }
+    header li{
+        margin-top: 12px;
+    }
+    header a{
+        color: #fff; 
+    }
+    .detail-features{
+        flex-grow: 1;
+        margin-top: 20px;
+    }
+    .best-deal-head{
+        flex-direction: column;
+        align-items: center;
+    }
+    .map-info{
+        flex-direction: column;
+    }
+    .map-info .info{
+        width: 100%;
+    }
+}
+
+@media (max-width:565px){
+    nav .container{
+        flex-direction: column;
+        gap: 3px;
+    }
+}
